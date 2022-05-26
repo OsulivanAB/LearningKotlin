@@ -1,0 +1,1 @@
+This repo has projects created while taking the [Developing Android Applications with Kotlin](https://app.pluralsight.com/paths/skill/android-development-with-kotlin-fundamentals) course on Pluralsight
