@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            val originalValue = textDisplayedValue.text.toString().toInt()
-            val newValue = originalValue * 2
+            val originalValue: Int = textDisplayedValue.text.toString().toInt()
+            val newValue: Int = originalValue * 2
             textDisplayedValue.text = newValue.toString()
             Snackbar.make(view, "Value $originalValue changed to $newValue",
                 Snackbar.LENGTH_LONG)
@@ -24,16 +24,20 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Inflate the menu; this adds items to the action bar if it is present.
+     */
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
+    /**
+     * Handle action bar item clicks here. The action bar will
+     * automatically handle clicks on the Home/Up button, so long
+     * as you specify a parent activity in AndroidManifest.xml.
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
