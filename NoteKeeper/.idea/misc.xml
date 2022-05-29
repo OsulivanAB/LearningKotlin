@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/drawable/ic_add_white_24.xml" value="0.2555" />
         <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/layout/activity_note_list.xml" value="0.19519927536231885" />
+        <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/layout/activity_note_list2.xml" value="0.25" />
         <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/layout/content_note_list.xml" value="0.19519927536231885" />
         <entry key="..\:/LearningKotlin/NoteKeeper/app/src/main/res/menu/menu_main.xml" value="0.25" />
       </map>
     </option>

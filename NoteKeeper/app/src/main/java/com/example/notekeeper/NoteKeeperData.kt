@@ -5,7 +5,7 @@ package com.example.notekeeper
  * @param courseId The ID of the course.
  * @param title The title of the course.
  */
-class CourseInfo (val courseId: String, val title: String) {
+data class CourseInfo (val courseId: String, val title: String) {
     override fun toString(): String {
         return title
     }
@@ -17,4 +17,4 @@ class CourseInfo (val courseId: String, val title: String) {
  * @param title The title of the note.
  * @param text The body of the note.
  */
-class NoteInfo (var course: CourseInfo, var title: String, var text: String)
+data class NoteInfo (var course: CourseInfo, var title: String, var text: String)

@@ -4,4 +4,6 @@
     <string name="default_Text">1</string>
     <string name="note_text_hint">Note text</string>
     <string name="note_title_hint">Note title</string>
+    <string name="main_activity_label">Edit Note</string>
+    <string name="fab_content_description">Add note</string>
 </resources>
