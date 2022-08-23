@@ -17,4 +17,4 @@ data class CourseInfo (val courseId: String, val title: String) {
  * @param title The title of the note.
  * @param text The body of the note.
  */
-data class NoteInfo (var course: CourseInfo, var title: String, var text: String)
+class NoteInfo (var course: CourseInfo, var title: String, var text: String)

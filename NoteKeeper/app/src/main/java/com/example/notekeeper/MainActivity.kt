@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ArrayAdapter
+import androidx.appcompat.content.res.AppCompatResources
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -45,6 +46,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
+    }
+
+    /**
+     * Happens after onCreateOptionsMenu and applies any logic to the creation
+     * of the menu.
+     */
+    override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
+        if (notePosition >= DataManager.notes.lastIndex) {
+            val menuItem = menu?.findItem(R.id.action_next)
+            if (menuItem != null) {
+                menuItem.icon = AppCompatResources.getDrawable(this, R.drawable.ic_baseline_block_24)
+                menuItem.isEnabled = false
+            }
+        }
+
+        return super.onPrepareOptionsMenu(menu)
     }
 
     /**

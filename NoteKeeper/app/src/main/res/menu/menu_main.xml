@@ -9,5 +9,11 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/action_next"
+<<<<<<< HEAD
+        android:icon="@drawable/ic_baseline_forward_24"
+        android:title="@string/next"
+        app:showAsAction="ifRoom|withText" />
+=======
         android:title="@string/next" />
+>>>>>>> ac827c9ebcb06a3f35b153dfb8919fcf327e893a
 </menu>
